@@ -85,5 +85,68 @@ familia.forEach(persona => {
 });
 
 /* ejercicio 9 */
+/*
+let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+for (let i = 0; i < numeros.length; i++) {
+ 
+  if (numeros[i] % 2 !== 0) {
+   
+    console.log(numeros[i])}
+  }
+
+  /* ejercicio 10 */
+
+
+
+/* eejrcicio 11 */
+/*
+let numeros = [14, 27, 5, 8, 43, 20, 35, 10, 49, 16];
+
+
+let grande = numeros[0]; 
+
+for (let i = 1; i < numeros.length; i++) {
+  if (numeros[i] > grande) {
+    grande = numeros[i];
+  }
+}
+console.log("El número más grande es: " + grande);
+
+/* ejercicio 12 */
+/*
+let numeros = [14, 27, 5, 8, 43, 20, 35, 10, 49, 16];
+
+
+let chico = numeros[0]; 
+
+for (let i = 1; i < numeros.length; i++) {
+  if (numeros[i] < chico) {
+    chico = numeros[i];
+  }
+}
+console.log("El número más chico es: " + chico);
+
+/* ejercicio 13 */
+
+/* ejercicio 14 */
+for (let i = 1; i <= 5; i++) {
+    
+    let espacio = '';
+    for (let j = 1; j <= i; j++) {
+      espacio += '* ';
+    }
+    console.log(espacio);
+  }
+ /*ejercicio 15 */
+ for (let i = 5; i >= 1; i--) {
+    
+    let espacio = '';
+    for (let j = 1; j <= i; j++) {
+      espacio += '* ';
+    }
+    console.log(espacio);
+  }
+
 
 
