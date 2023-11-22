@@ -41,10 +41,26 @@ let adivinado = true;
     }
 
     /* ejercicio 4 */
-
-
-
-
+    /*
+    function esPrimo(numero) {
+      if (numero < 2) {
+          return false;
+      }
+      for (let i = 2; i <= numero / 2; i++) {
+          if (numero % i === 0) {
+              return false;
+          }
+      }
+      return true;
+  }
+  
+  let numeroIngresado = parseInt(prompt("Ingrese un número:"));
+  
+  if (esPrimo(numeroIngresado)) {
+      console.log(`${numeroIngresado} es un número primo.`);
+  } else {
+      console.log(`${numeroIngresado} no es un número primo.`);
+  }
 
 
 /* ejercio 5 */
@@ -96,6 +112,30 @@ for (let i = 0; i < numeros.length; i++) {
   }
 
   /* ejercicio 10 */
+/*
+  let sumaPares = 0;
+let sumaImpares = 0;
+
+while (true) {
+
+    let numero = parseInt(prompt("Ingrese un número (ingrese 0 para finalizar):"));
+
+   
+    if (numero === 0) {
+        break;
+    }
+
+ 
+    if (numero % 2 === 0) {
+        sumaPares += numero;
+    } else {
+        sumaImpares += numero;
+    }
+}
+
+
+console.log(`La suma de los números pares es: ${sumaPares}`);
+console.log(`La suma de los números impares es: ${sumaImpares}`);
 
 
 
@@ -128,8 +168,50 @@ for (let i = 1; i < numeros.length; i++) {
 console.log("El número más chico es: " + chico);
 
 /* ejercicio 13 */
+/*
+function obtenerMano() {
+  
+  let mano = prompt("Ingrese su elección (piedra, papel o tijeras):").toLowerCase();
+
+  if (mano === "piedra" || mano === "papel" || mano === "tijeras") {
+      return mano;
+  } else {
+      console.log("Elección no válida. Inténtelo de nuevo.");
+      return obtenerMano();
+  }
+}
+
+let jugador1 = prompt("Ingrese el nombre del jugador 1:");
+let jugador2 = prompt("Ingrese el nombre del jugador 2:");
+
+
+while (true) {
+ 
+  let manoJugador1 = obtenerMano();
+  let manoJugador2 = obtenerMano();
+
+
+  if (manoJugador1 === manoJugador2) {
+      console.log("Empate. ¡Intenten de nuevo!");
+  } else {
+      
+      let ganador = (manoJugador1 === "piedra" && manoJugador2 === "tijeras") ||
+                      (manoJugador1 === "papel" && manoJugador2 === "piedra") ||
+                      (manoJugador1 === "tijeras" && manoJugador2 === "papel");
+
+      if (ganador) {
+          console.log(`¡${jugador1} gana! `);
+          break;
+      } else {
+          console.log(`¡${jugador2} gana! `);
+          break;
+      }
+  }
+}
+
 
 /* ejercicio 14 */
+/*
 for (let i = 1; i <= 5; i++) {
     
     let espacio = '';
@@ -139,6 +221,7 @@ for (let i = 1; i <= 5; i++) {
     console.log(espacio);
   }
  /*ejercicio 15 */
+ /*
  for (let i = 5; i >= 1; i--) {
     
     let espacio = '';
